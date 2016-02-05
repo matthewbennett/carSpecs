@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Plato - a simple fondation</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="index/index.css" />
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Main.js -->
+    <script src="index/index.js"></script>
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" type="text/css" href="globalCss/font-awesome.min.css">
+    <!-- handlebars -->
+    <script type="text/javascript" src="index/handlebars.js"></script>
+  </head>
+  <header>
+    <h1 class="title">Speces on all you favorate cars in one place</h1>
+    <h5 class="sub">Pick a car and check out the specs</h5>
+    <p class="hint">100% responsive!</p>
+  </header>
+  <body>
+    <div class="makeConatiner"></div>
+    
+  </body>
+</html>
+<!--template car makes info -->
+<script id="carMakes" type="text/x-handlebars-template">
+{{#each this}}
+<div class="carMakeContainer">
+  <img class="carMakeLogo" src="https://logo.clearbit.com/{{this.niceName}}.com"/>
+  <div class="carMakeSpecsContainer">
+    <div class="makeNameContainer">
+      <h1 class="makeName">{{this.name}}<h1>
+      <h1 class="carTitle"></h1>
+    </div>
+    <div id="{{this.niceName}}" class="makeCarsList">
+      {{#each this.models}}
+      <div id="{{this.niceName}}" class='carNameContainer'>
+        <p class="carName">{{this.name}}</p>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<div id="drop{{this.niceName}}" class="carSpecDropdown">
+  <div class="menu">
+    <div class="specsMenu"><span>Specs</span></div>
+    <div class="specList">
+      </div>
+      <div class="price"></div>
+    </div>
+  </div>
+</div>
+{{/each}}
+</script>
+<!--template spec info -->
+<script id="specInfo" type="text/x-handlebars-template">
+<div class="specContainer">
+  <span class="specKey">Intake:</span><span class="specVal">{{this.compressorType}}</span>
+</div>
+<div class="specContainer">
+  <span class="specKey">configuration:</span><span class="specVal">{{this.configuration}}</span>
+</div>
+<div class="specContainer">
+  <span class="specKey">cylinder:</span><span class="specVal">{{this.cylinder}}</span>
+</div>
+<div class="specContainer">
+  <span class="specKey">horsepower:</span><span class="specVal">{{this.horsepower}}</span>
+</div>
+<div class="specContainer">
+  <span class="specKey">torque:</span><span class="specVal">{{this.torque}}</span>
+</div>
+<div class="specContainer">
+  <span class="specKey">totalValves:</span><span class="specVal">{{this.totalValves}}</span>
+</div>
+</script>

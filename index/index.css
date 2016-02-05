@@ -1,0 +1,166 @@
+html {
+    font: 100%/1.5em 'Roboto', sans-serif;
+/*    min-height: 100%;
+    min-width: 1366px;*/
+    position: relative;
+    padding-bottom: 20em;
+}
+
+.title {
+	text-align: center;
+	color: rgba(61, 67, 81, 0.84);
+	margin-bottom: 25px;
+}
+
+.sub {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 25px;
+	color: #3498db;
+}
+
+.hint {
+	text-align: center;
+	color: #ccc;
+}
+
+.makeConatiner {
+	width: 85%;
+	margin: 0 auto;
+	display: block;
+	overflow: auto;
+}
+
+.makeNameContainer {
+	height: 13%;
+	width: 100%;
+	margin-top: -12px;
+	background:rgba(44, 62, 80, 0.71);
+}
+
+.carMakeContainer {
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-left: 35px;
+	margin-top: 25px;
+	position: relative;
+	background-image: -webkit-linear-gradient(#e5e5e5 49px,#eaeaea 49px);
+    background-image: linear-gradient(#e5e5e5 49px,#eaeaea 49px);
+    -webkit-background-size: 100% 98px;
+    background-size: 100% 98px;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+
+.carMakeLogo {
+	width: 100%;
+	height: 100%;
+}
+
+.carMakeSpecsContainer {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	overflow: auto;
+}
+
+.makeName {
+	color: #fff;
+    font-size: 17px;
+    line-height: 43px;
+    margin-left: 10px;
+}
+
+.carNameContainer {
+	width: 90%;
+	height: 40px;
+	border-bottom: 1px solid #ccc; 
+	line-height: 25px;
+	margin: 0 auto;
+	display: block;
+	z-index: 3;
+}
+
+.carName {
+	color: #fff;
+	margin-left: 15px;
+}
+
+.carTitle {
+    float: right;
+    color: #8dc63f;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: -8px;
+}
+
+.makeCarsList {
+	overflow: scroll;
+	height: 87%;
+	background-color: rgba(108, 122, 137, 0.85);
+	display: none;
+	transition: all 2s ease;
+}
+
+.carSpecDropdown {
+	display: none;
+	height: 300px;
+	width: 300px;
+	float: left;
+	background-color: #8dc63f;
+	margin-top: 25px;
+	margin-left: 34px;
+	overflow: auto;
+}
+
+.menu {
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-weight: 500px;
+	margin-top: -20px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 10px;
+}
+
+.specsMenu {
+	width:100%;
+	height: 100%;
+	border-right: 1px solid #fff;
+	float: left;
+	/*border-bottom: 1px solid #fff;*/
+}
+
+
+.specList {
+width: 80%;
+    height: 100%;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 63px;
+}
+
+.specKey {
+	float: left;
+	width: 40px;
+}
+
+.specVal {
+	text-align: left;
+}
+
+
+
+
+
+
+
