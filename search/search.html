@@ -13,30 +13,32 @@
   <body>
     <div id="main">
       <div class="col-md-3">
-        <label for="basic-url">year</label>
-        <input type="text" class="form form-control" name="">
+                <label for="basic-url">Year</label>
+        <div class="dropdown">
+          <button class="btn yearBtn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">2016
+          <span class="caret"></span></button>
+          <ul id="yearDrop" class="dropdown-menu">
+
+          </ul>
+        </div>
       </div>
       <div class="col-md-3">
         <label for="basic-url">make</label>
         <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Acura
+          <button id="#modelBtn" class="btn makeBtn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Acura
           <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
+          <ul id="makeDrop" class="dropdown-menu">
+
           </ul>
         </div>
       </div>
       <div class="col-md-3">
         <label for="basic-url">model</label>
         <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">RSX
+          <button  class="btn modelBtn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">RSX
           <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
+          <ul id="modelDrop" class="dropdown-menu">
+
           </ul>
         </div>
       </div>
